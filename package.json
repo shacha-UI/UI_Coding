@@ -1,0 +1,19 @@
+{
+  "name": "", // name of your project
+  "version": "2.2.0",
+  "description": "", // description of your project
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/stylesheets/custom.scss assets/stylesheets/custom.css -w", //path of .scss file  path of .css file to be created
+    "compile:sass": "node-sass assets/stylesheets/custom.scss assets/stylesheets/custom.comp.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "",
+  "license": "ISC",
+ "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.3"
+  },
+}
