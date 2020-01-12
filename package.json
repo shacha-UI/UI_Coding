@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass assets/stylesheets/custom.scss assets/stylesheets/custom.css -w", //path of .scss file  path of .css file to be created
     "compile:sass": "node-sass assets/stylesheets/custom.scss assets/stylesheets/custom.comp.css",
-    "devserver": "live-server",
+    "devserver": "live-server", //for live server, auto-reload
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "",
